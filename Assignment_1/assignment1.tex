@@ -1,4 +1,4 @@
-\documentclass[journal,12pt,twocolumn]{IEEEtran}
+ \documentclass[journal,12pt,twocolumn]{IEEEtran}
 %
 \usepackage{setspace}
 \usepackage{gensymb}
@@ -62,7 +62,7 @@
 \renewcommand\thesection{\arabic{section}}
 \renewcommand\thesubsection{\thesection.\arabic{subsection}}
 \renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
-
+\newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
 \renewcommand\thesectiondis{\arabic{section}}
 \renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
 \renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
@@ -213,6 +213,8 @@ columns=fullflexible
 \bigskip
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
+\counterwithout{figure}{section}
+\counterwithout{figure}{subsection}
 %\renewcommand{\theequation}{\theenumi}
 %\begin{abstract}
 %%\boldmath
@@ -317,16 +319,26 @@ normal to the line
 (6   -7)\textbf{x} = 8\\
 \end{center}
 is in the direction of (7,6) as\\
+
+
 \[(6 , -7).(7,6)=0\]
-so the the direction of path he should follow is (7,6)\\
-To find the constant c
-\[c=(7,6).(31/17,-2/17)=7*\frac{31}{17}+6*\frac{-2}{17}\]
-\[c=12.05\]
+
+The equation of the line in terms of normal vector passing through a given point is obtained as
+\begin{align*}
+n^T(x-A)=0\\
+n^Tx=n^TA\\
+\numberthis \label{eqn}
+\end{align*}
+
 Hence, he should follow this path PQ:\\
 \begin{center}
 (7   6)\textbf{x} = 12.05\\
 \end{center}
-\includegraphics[scale=0.7]{Figure_1.png}
+\begin{figure}[htbp]
+\centering \includegraphics[scale=0.6]{Figure_1.png}
+\caption{The Required path is PQ.}
+\end{figure}
+
 
 \end{flushleft}
 \end{document}
