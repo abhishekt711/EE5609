@@ -306,15 +306,27 @@ Transforming the matrix into row-echelon form \\
 \end{align}
 
 After solving this two equation we will get the junction point, which is intersection of this line segments.\\
-Thus, Junction Point is [[ 1.82352941]
- [-0.11764706]]\\
-Step 2: To reach in the least time, he should follow the shortest path, i.e, perpendicular from the junction point to the line give by this equation:
+Thus, Junction Point is (31/17, -2/17), i.e, (1.82,-0.11)
+\\
+To reach in the least time, he should follow the shortest path, i.e, perpendicular from the junction point to the line give by this equation:
 \begin{center}
 (6   -7)\textbf{x} = 8\\
 \end{center}
-Step 3: Now we have coordinates of foot of perpendicular on the desired path and the coordinates of junction point.\\
-using this two given point we will construct the equation of path which he should follow.\\
+normal to the line 
+\begin{center}
+(6   -7)\textbf{x} = 8\\
+\end{center}
+is in the direction of (7,6) as\\
+\[(6 , -7).(7,6)=0\]
+so the the direction of path he should follow is (7,6)\\
+To find the constant c
+\[c=(7,6).(31/17,-2/17)=7*\frac{31}{17}+6*\frac{-2}{17}\]
+\[c=12.05\]
+Hence, he should follow this path PQ:\\
+\begin{center}
+(7   6)\textbf{x} = 12.05\\
+\end{center}
 \includegraphics[scale=0.7]{Figure_1.png}
-Hence, he should follow the path PQ to reach in least time, i.e, The line passing through points P and Q is: \[7x + 6y =  12.05882353\]\\
+
 \end{flushleft}
 \end{document}
