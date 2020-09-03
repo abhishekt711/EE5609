@@ -271,23 +271,25 @@ in the least time. Find the equation of the path that he should follow.
 \section{Solution}
 \begin{flushleft}
 Step1: we need to find the solution of equation:\\
-\begin{center}
+\begin{align*}
 (2   -3)\textbf{x} = 4\\
-(3   4)\textbf{x} = 5\
-\end{center}
+(3   4)\textbf{x} = 5\\
+\numberthis \label{eqn}
+\end{align*}
 
 
-$$
+\begin{align*}
 \begin{pmatrix}
     2 & -3 & 4 \\ 
     3 & 4 & 5
-\end{pmatrix}
-$$
+\end{pmatrix} \\
+\numberthis \label{eqn}
+\end{align*}
 Transforming the matrix into row-echelon form \\
 \begin{align}
 \myvec{
 2 & -3 & 4 \\
-3 & 4 & 5
+3 & 4 & 5\\
 }
   \xleftrightarrow[]{R1 \leftarrow \frac{4}{17}*(R1+ \frac{3}{4}R2) } \nonumber \\
 \myvec{
@@ -308,35 +310,38 @@ Transforming the matrix into row-echelon form \\
 \end{align}
 
 After solving this two equation we will get the junction point, which is intersection of this line segments.\\
-Thus, Junction Point is (31/17, -2/17), i.e, (1.82,-0.11)
-\\
+Thus, Junction Point is (31/17, -2/17).
 To reach in the least time, he should follow the shortest path, i.e, perpendicular from the junction point to the line give by this equation:
 \begin{align*}\\
 (6   -7)\textbf{x} = 8\\
+\numberthis \label{eqn}
 \end{align*}
 is in the direction of (7,6) as\\
 
 \begin{align*}
-\myvec{6 \\-7}.\myvec{7 & 6}=0
-\end{align*}
-
-
-The equation of the line in terms of normal vector passing through a given point is obtained as
-\begin{align*}
-\vec{n}^T(\vec{x}-\vec{A})=0\\
-\vec{n}^T\vec{x}=\vec{n}^T\vec{A}\\
+(6,-7)^T(7,6)=0\\
 \numberthis \label{eqn}
 \end{align*}
-
-Hence, he should follow this path PQ:\\
-\begin{center}
-(7   6)\textbf{x} = 12.05\\
-\end{center}
 \begin{figure}[htbp]
 \centering \includegraphics[width=\columnwidth]{Figure_1.png}
 \caption{The Required path is PQ.}
 \label{fig: Path PQ}
 \end{figure}
+\newpage
+The equation of the line in terms of normal vector passing through a given point is obtained as
+\begin{align*}
+\vec{n}^T(\vec{x}-\vec{A})=0\\
+\numberthis \label{eqn}
+\vec{n}^T\vec{x}=\vec{n}^T\vec{A}\\
+\numberthis \label{eqn}
+\end{align*}
+
+Hence, he should follow this path PQ:\\
+\begin{align*}
+(7 ,6)\textbf{x} = 12.05\\
+\numberthis \label{eqn}
+\end{align*}
+
 
 
 \end{flushleft}
