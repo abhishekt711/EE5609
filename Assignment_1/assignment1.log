@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.9.1)  3 SEP 2020 21:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.9.1)  4 SEP 2020 09:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1310,30 +1310,30 @@ LaTeX Info: Redefining \nameref on input line 86.
 \c@lemma=\count274
 \c@example=\count275
 \c@rem=\count276
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 274.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 260.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 274.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 260.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 274.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 260.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 274.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 260.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 274.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 260.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
@@ -1371,7 +1371,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 347.
 Here is how much of TeX's memory you used:
  31468 strings out of 492982
  666540 string characters out of 6134897
- 864583 words of memory out of 5000000
+ 865583 words of memory out of 5000000
  34411 multiletter control sequences out of 15000+600000
  68458 words of font info for 144 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1385,7 +1385,7 @@ fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/urw/times/utmri8a.pfb>
-Output written on assignment1.pdf (2 pages, 67751 bytes).
+Output written on assignment1.pdf (2 pages, 67939 bytes).
 PDF statistics:
  84 PDF objects out of 1000 (max. 8388607)
  68 compressed objects within 1 object stream

@@ -257,14 +257,14 @@ https://github.com/abhishekt711/EE5609/codes
 %
 \section{Problem}
 60. A person standing at the junction of two straight paths represented by the equations
-\begin{center}
-(2   -3)\textbf{x} = 4\\
-(3   4)\textbf{x} = 5\
-\end{center}
+\begin{align*}
+\myvec{2 & -3}\textbf{x} = 4\\
+\myvec{3 & 4}\textbf{x} = 5\
+\end{align*}
 want to reach the path whose equation is 
-\begin{center}
-(6   -7)\textbf{x} = 8\\
-\end{center}
+\begin{align*}
+\myvec{6 & -7}\textbf{x} = 8\\
+\end{align*}
 in the least time. Find the equation of the path that he should follow.
 %
 %
@@ -272,8 +272,8 @@ in the least time. Find the equation of the path that he should follow.
 \begin{flushleft}
 Step1: we need to find the solution of equation:\\
 \begin{align*}
-(2   -3)\textbf{x} = 4\\
-(3   4)\textbf{x} = 5\\
+\myvec{2 & -3}\textbf{x} = 4\\
+\myvec{3 & 4}\textbf{x} = 5\\
 \numberthis \label{eqn}
 \end{align*}
 
@@ -313,13 +313,13 @@ After solving this two equation we will get the junction point, which is interse
 Thus, Junction Point is (31/17, -2/17).
 To reach in the least time, he should follow the shortest path, i.e, perpendicular from the junction point to the line give by this equation:
 \begin{align*}\\
-(6   -7)\textbf{x} = 8\\
+\myvec{6 & -7}\textbf{x} = 8\\
 \numberthis \label{eqn}
 \end{align*}
 is in the direction of (7,6) as\\
 
 \begin{align*}
-(6,-7)^T(7,6)=0\\
+\myvec{6 & -7} ^T\myvec{7 & 6} =0\\
 \numberthis \label{eqn}
 \end{align*}
 \begin{figure}[htbp]
@@ -337,7 +337,7 @@ The equation of the line in terms of normal vector passing through a given point
 
 Hence, he should follow this path PQ:
 \begin{align*}
-(7 ,6)\textbf{x} = \frac{205}{17}\\
+\myvec{7 & 6} \textbf{x} = \frac{205}{17}\\
 \numberthis \label{eqn}
 \end{align*}
 
