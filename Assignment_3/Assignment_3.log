@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.9.21)  24 SEP 2020 16:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.9.21)  24 SEP 2020 16:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1321,35 +1321,39 @@ LaTeX Font Info:    Try loading font information for U+txsyc on input line 142.
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-Underfull \hbox (badness 10000) in paragraph at lines 158--160
-
- []
-
-(./quadrilateral.tex) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-
-]
-Underfull \hbox (badness 2884) in paragraph at lines 212--214
+(./quadrilateral.tex)
+Underfull \hbox (badness 2884) in paragraph at lines 201--203
 \OT1/txr/m/n/12 We are given that AE=AC, AD=AB. Us-ing,
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 230.
-[2
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 230.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 219.
+ [2
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 219.
  (./Assignment_3.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 230.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 230.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 219.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 219.
 Package rerunfilecheck Info: File `Assignment_3.out' has not changed.
-(rerunfilecheck)             Checksum: 93E989AE660E5124C5D3F5827BF2E06E;129.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 230.
+(rerunfilecheck)             Checksum: A9318C79110D9C8E83CA78FF749CBB85;88.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 219.
  ) 
 Here is how much of TeX's memory you used:
- 31537 strings out of 492982
- 667835 string characters out of 6134896
- 867565 words of memory out of 5000000
- 34463 multiletter control sequences out of 15000+600000
+ 31527 strings out of 492982
+ 667741 string characters out of 6134896
+ 863565 words of memory out of 5000000
+ 34458 multiletter control sequences out of 15000+600000
  67142 words of font info for 142 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,10n,67p,416b,884s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1358,15 +1362,14 @@ e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/tx
 fonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
-s/utmri8a.pfb>
-Output written on Assignment_3.pdf (2 pages, 58698 bytes).
+pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/urw/times/utmri8a.pfb>
+Output written on Assignment_3.pdf (2 pages, 56158 bytes).
 PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
- 99 compressed objects within 1 object stream
- 35 named destinations out of 1000 (max. 500000)
- 37 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 101 PDF objects out of 1000 (max. 8388607)
+ 87 compressed objects within 1 object stream
+ 30 named destinations out of 1000 (max. 500000)
+ 29 words of extra memory for PDF output out of 10000 (max. 10000000)
 
