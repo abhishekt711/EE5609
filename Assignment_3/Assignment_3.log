@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.9.21)  24 SEP 2020 14:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.9.21)  24 SEP 2020 16:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1363,7 +1363,7 @@ hare/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
 s/utmri8a.pfb>
-Output written on Assignment_3.pdf (2 pages, 58700 bytes).
+Output written on Assignment_3.pdf (2 pages, 58698 bytes).
 PDF statistics:
  114 PDF objects out of 1000 (max. 8388607)
  99 compressed objects within 1 object stream
