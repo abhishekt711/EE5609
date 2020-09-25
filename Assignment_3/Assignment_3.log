@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.9.21)  25 SEP 2020 18:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.9.21)  25 SEP 2020 18:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1335,10 +1335,9 @@ r/bx/n/12 C\OT1/txr/m/n/12 )[](\OT1/txr/bx/n/12 A \OMS/txsy/m/n/12 ^^@ \OT1/txr
 Overfull \hbox (18.92636pt too wide) detected at line 231
  []$[] \OMS/txsy/m/n/12 ^^@ [][] ^^@ [][] \OT1/txr/m/n/12 + (\OT1/txr/bx/n/12 A
  \OMS/txsy/m/n/12 ^^@ \OT1/txr/bx/n/12 D\OT1/txr/m/n/12 )[](\OT1/txr/bx/n/12 A 
-\OT1/txr/m/n/12 + \OT1/txr/bx/n/12 E\OT1/txr/m/n/12 ) \OMS/txsy/m/n/12 ^^@ \OT1
-/txr/m/n/12 (\OT1/txr/bx/n/12 A \OMS/txsy/m/n/12 ^^@ \OT1/txr/bx/n/12 E\OT1/txr
-/m/n/12 )[](\OT1/txr/bx/n/12 A \OMS/txsy/m/n/12 ^^@ \OT1/txr/bx/n/12 D\OT1/txr/
-m/n/12 )$ []  
+\OT1/txr/m/n/12 + \OT1/txr/bx/n/12 E\OT1/txr/m/n/12 ) + (\OT1/txr/bx/n/12 A \OM
+S/txsy/m/n/12 ^^@ \OT1/txr/bx/n/12 E\OT1/txr/m/n/12 )[](\OT1/txr/bx/n/12 A \OMS
+/txsy/m/n/12 ^^@ \OT1/txr/bx/n/12 D\OT1/txr/m/n/12 )$ []  
  []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
@@ -1371,7 +1370,7 @@ pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/urw/times/utmri8a.pfb>
-Output written on Assignment_3.pdf (1 page, 55081 bytes).
+Output written on Assignment_3.pdf (1 page, 55082 bytes).
 PDF statistics:
  89 PDF objects out of 1000 (max. 8388607)
  76 compressed objects within 1 object stream
