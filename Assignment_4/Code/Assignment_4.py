@@ -49,6 +49,7 @@ plt.plot(x_AY[0,:],x_AY[1,:])
 
 plt.text(B[0],B[1]+ 0.1,'B')
 plt.text(A[0],A[1]+0.1,'A')
+plt.text(O[0],O[1]+0.1,'O')
 
 
 plt.xlabel('$x$')

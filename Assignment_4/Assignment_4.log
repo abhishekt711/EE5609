@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.9.21)  3 OCT 2020 01:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.9.21)  3 OCT 2020 15:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1336,26 +1336,30 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Underfull \vbox (badness 3343) has occurred while \output is active []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
  <./circle.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 183.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 183.
- (./Assignment_4.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 183.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 183.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 186.
+ [2
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 186.
+
+(./Assignment_4.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 186.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 186.
 Package rerunfilecheck Info: File `Assignment_4.out' has not changed.
 (rerunfilecheck)             Checksum: A9318C79110D9C8E83CA78FF749CBB85;88.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 183.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 186.
  ) 
 Here is how much of TeX's memory you used:
- 31489 strings out of 492982
- 666789 string characters out of 6134896
- 869564 words of memory out of 5000000
+ 31492 strings out of 492982
+ 666825 string characters out of 6134896
+ 869565 words of memory out of 5000000
  34426 multiletter control sequences out of 15000+600000
  68492 words of font info for 144 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1369,10 +1373,10 @@ fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/urw/times/utmri8a.pfb>
-Output written on Assignment_4.pdf (1 page, 75357 bytes).
+Output written on Assignment_4.pdf (2 pages, 76836 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
- 75 compressed objects within 1 object stream
- 24 named destinations out of 1000 (max. 500000)
+ 97 PDF objects out of 1000 (max. 8388607)
+ 81 compressed objects within 1 object stream
+ 27 named destinations out of 1000 (max. 500000)
  34 words of extra memory for PDF output out of 10000 (max. 10000000)
 
