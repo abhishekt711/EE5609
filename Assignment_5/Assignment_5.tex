@@ -168,34 +168,27 @@ Under \textit{Affine transformation},
 	\label{eq7}\myvec{x \\ y} &= \myvec{X+\alpha \\ Y+\beta}
 \end{align}
 \eqref{eq5} under transformation \eqref{eq7} will become,
-\begin{equation}\label{eq8}
-	aX^2 + 2bXY + cY^2 = 0
-\end{equation}
-\begin{equation}\label{eq9}
-	\myvec{X & Y} \myvec{a & h \\ h & b} \myvec{X \\ Y} = 0
-\end{equation}
+\begin{align}
+aX^2 + 2bXY + cY^2 = 0\label{eq8}\\
+\myvec{X & Y} \myvec{a & h \\ h & b} \myvec{X \\ Y} = 0\label{eq9}
+\end{align}
 %\begin{equation}\label{eq10}
 %	\vec{X}^T\vec{V}\vec{X} = 0
 %\end{equation}
-\begin{equation}\label{eq11}
-	\myvec{X & Y} \myvec{u_1 & v_1 \\ u_2 & v_2} \myvec{\lambda_1 & 0\\ 0 & \lambda_2} \myvec{u_1 & u_2 \\ v_1 & v_2} \myvec{X \\ Y} = 0
-\end{equation}
-\begin{equation}
-	\myvec{X^\prime & Y^\prime}  \myvec{\lambda_1 & 0\\ 0 & \lambda_2} \myvec{X^\prime \\ Y^\prime} = 0
-\end{equation}
-\begin{equation}\label{eq12}
-	\text{where } X^\prime = Xu_1 + Yu_2 \text{ and } Y^\prime = Xv_1 + Yv_2
-\end{equation}
-\begin{equation}\label{eq13}
+\begin{align}\label{eq11}
+	\myvec{X & Y} \myvec{u_1 & v_1 \\ u_2 & v_2} \myvec{\lambda_1 & 0\\ 0 & \lambda_2} \myvec{u_1 & u_2 \\ v_1 & v_2} \myvec{X \\ Y} = 0\\
+	\myvec{X^\prime & Y^\prime}  \myvec{\lambda_1 & 0\\ 0 & \lambda_2} \myvec{X^\prime \\ Y^\prime} = 0\\
+	\label{eq12}
+	\text{where } X^\prime = Xu_1 + Yu_2 \text{ and } Y^\prime = Xv_1 + Yv_2\\
+	\label{eq13}
 	\implies \lambda_1 (X^\prime)^2 + \lambda_2 (Y^\prime)^2 = 0
-\end{equation}
+\end{align}
 \eqref{eq13} is called \textit{Spectral decomposition} of matrix
 \begin{align}
 	\implies X^\prime &= \pm \sqrt{-\frac{\lambda_2}{\lambda_1}}Y^\prime\\	
 	u_1X + u_2Y &= \pm \sqrt{-\frac{\lambda_2}{\lambda_1}}(v_1X + v_2Y)\\
 	\label{eq14}u_1(x-\alpha) + u_2(y-\beta) &= \pm \sqrt{-\frac{\lambda_2}{\lambda_1}}(v_1(x-\alpha) + v_2(y-\beta))
 \end{align}
-
 Given equation is
 \begin{align}
 	-x^2-xy+6y^2+30y+36=0
@@ -205,17 +198,22 @@ Substituting in \eqref{eq6}
 	\label{eq16}\myvec{ -1 & \frac{-1}{2}\\\frac{-1}{2} & 6}\myvec{\alpha \\ \beta} = \myvec{0 \\ -15} \\
 	\label{eq17}\implies \myvec{\alpha \\ \beta} = \myvec{\frac{30}{23} \\ \frac{-60}{23}}
 \end{align}
-\begin{equation}
-	\text{From \textit{Spectral theorem, }}\vec{V} = \vec{P}\vec{D}\vec{P}^T
-\end{equation}
+From, Spectral decomposition,
 \begin{align}
-	\label{eq18}\vec{V} &= \myvec{ -1 & \frac{-1}{2}\\\frac{-1}{2} & 6}
+	\vec{V} &= \vec{P}\vec{D}\vec{P}^T\\
+	\label{eq18}\vec{V} &= \myvec{ -1 & \frac{-1}{2}\\\frac{-1}{2} & 6}\\
+	\label{eq19}\vec{P} &= \myvec{7-5 \sqrt{2} & 7+5 \sqrt{2}\\ 1 & 1}\\
+	\label{eq20}\vec{D} &= \myvec{\frac{5+5\sqrt{2}}{2} & 0\\ 0 & \frac{5-5\sqrt{2}}{2}}
 \end{align}
-P and D are found using python code from
+P and D are also verified using python code from
 \begin{lstlisting}
 codes/diagonalize1.py
 \end{lstlisting}
-Substituting and simplifying in \ref{eq14}.
+Substituting \eqref{eq17}, \eqref{eq19} and \eqref{eq20} in \eqref{eq14},
+\begin{multline}\label{eq21}
+	\left(7-5 \sqrt{2}\right)\left(x-\frac{30}{23}\right) + \left(y+\frac{60}{23}\right) \\= \pm \sqrt{-\frac{\frac{5-5\sqrt{2}}{2}}{\frac{5+5\sqrt{2}}{2}}}\left(\left(7-5 \sqrt{2}\right)\left(x-\frac{30}{23}\right) + \left(y+\frac{60}{23}\right)\right)
+\end{multline}
+simplifying \ref{eq21}, we get:
 \begin{align}
 	\label{eq22}-x + 2y + 6 = 0 \text{ and } x + 3y + 6 = 0\\
 	\implies (-x + 2y + 6)(x + 3y + 6) = 0
@@ -227,83 +225,19 @@ Verified using python code from
 \begin{lstlisting}
 codes/Assignment_5.py
 \end{lstlisting}
-Also, from the given equation:
-\begin{align}
--x^2-xy+6y^2+30y+36=0 \label{eq1}
-\end{align}
-Slopes of the individual lines are roots of equation 
-\begin{align}
-    cm^2+2bm+a=0\\
-    \implies 6m^2-m-1=0\\
-    \text{Solving, }m=\frac{1}{2},-\frac{1}{3}
-\end{align}
-The normal vectors of the lines then become
-\begin{align}
-    \vec{n_1}=\myvec{-1\\2}\\
-    \vec{n_2}=\myvec{1\\3}
-\end{align}
-Equations of the lines can therefore be written as
-\begin{align}
-  \myvec{-1&2}\vec{x}=c_1\\
-   \myvec{1&3}\vec{x}=c_2\\
-  \implies \left[\myvec{-1&2}\vec{x}-c_1\right]\left[\myvec{1&3}\vec{x}-c_2\right]
-\end{align}
-represents the equation specified in \eqref{eq1}\\
-Comparing the equations, we have
-\begin{align}
-    \myvec{-1&1\\2&3}\myvec{c_2\\c_1}=\myvec{0\\-30}\\
- \end{align}
- Row reducing the augmented matrix
- \begin{align}
-    \myvec{-1&1&0\\2&3&-30}\xleftrightarrow[]{R_2\leftarrow R_2+2\times R_1}
-    \myvec{-1&1&0\\0&5&-30}\\
-    \xleftrightarrow[]{R_2\leftarrow R_1- R_2\times \frac{1}{5}}
-    \myvec{-1&0&6\\0&5&-30}\\
-    \xleftrightarrow[]{R_1\leftarrow -1\times R_1  , R_2\leftarrow \frac{1}{5}\times R_2}
-    \myvec{1&0&-6\\0&1&-6}\\
-    \implies c_1=-6 \text{ and }c_2=-6
-\end{align}
-The individual line equations therefore become
-\begin{align}
-    \myvec{-1&2}\vec{x}=-6\label{eq3} ,\\\myvec{1&3}\vec{x}=-6\label{eq4}
-\end{align}
-Note that the convolution of the normal vectors, should satisfy the below condition
-\begin{align}
-    \myvec{-1\\2}*\myvec{1\\3}=\myvec{a\\2b\\c}\label{eq5}
-\end{align}
-The LHS part of \eqref{eq5} can be rewritten using toeplitz matrix as
-\begin{align}
-    \myvec{-1&0\\2&-1\\0&2}\myvec{1\\3}=\myvec{-1\\-1\\6}=\myvec{a\\2b\\c}
-\end{align}
-The augmented matrix for the set of equations represented in \eqref{eq3}, \eqref{eq4} is
-\begin{align}
-\myvec{-1&2&-6\\1&3&-6}
-\end{align}
-Row reducing the matrix
-\begin{align}
- \myvec{-1&2&-6\\1&3&-6}\xleftrightarrow[]{R_2\leftarrow R_2+R_1}\myvec{-1&2&-6\\0&5&-12}\\
- \xleftrightarrow[]{R_1\leftarrow R_1-\frac{2}{5}\times R_2}\myvec{-1&0&-\frac{6}{5}\\0&5&-12}\\
- \xleftrightarrow[]{R_1\leftarrow -1\times R_1  , R_2\leftarrow \frac{1}{5}\times R_2}\myvec{1&0&\frac{6}{5}\\0&1&-\frac{12}{5}}\\
-\text{Hence, the intersection point is}
-\myvec{\frac{6}{5}\\-\frac{12}{5}}
-\end{align}
 
-
-
-Angle between two lines $\theta$ can be given by
+Angle between two lines, $\theta$ can be given by
 \begin{align}
-\cos \theta = \frac{\vec{n_1}^T\vec{n_2}}{\norm{\vec{n_1}}\norm{\vec{n_2}}}
+n_1&=\myvec{-2\\-1}\\
+n_2&=\myvec{-3\\1}\\
+\cos \theta &= \frac{\vec{n_1}^T\vec{n_2}}{\norm{\vec{n_1}}\norm{\vec{n_2}}}\\
+\cos \theta&=\frac{\myvec{-2&-1}\myvec{-3\\1}}{\sqrt{(-2)^2 +(-1)^2} \times \sqrt{+(-3)^2+1}}=\frac{1}{\sqrt{2}}\\
+\implies \theta &= 45\degree
 \end{align}
-%From \eqref{eq:solutions/13/3/3}, \eqref{eq:solutions/13/3/4},
-\begin{align}
-&\cos \theta=\frac{\myvec{-1&2}\myvec{1\\3}}{\sqrt{(-1)^2 +(2)^2} \times \sqrt{1 +(3)^2}}=\frac{1}{\sqrt{2}}\\
-&\implies \theta = 45\degree
-\end{align}
-\begin{figure}[!ht]
+\begin{figure}[!h]
 \centering
 \includegraphics[width=\columnwidth]{Figure_1.png}
 \caption{plot showing intersection of lines.}
 \label{Fig_1}
 \end{figure}
-
 \end{document}
