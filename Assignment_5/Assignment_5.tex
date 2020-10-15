@@ -172,22 +172,20 @@ Under \textit{Affine transformation},
 aX^2 + 2bXY + cY^2 = 0\label{eq8}\\
 \myvec{X & Y} \myvec{a & h \\ h & b} \myvec{X \\ Y} = 0\label{eq9}
 \end{align}
-%\begin{equation}\label{eq10}
-%	\vec{X}^T\vec{V}\vec{X} = 0
-%\end{equation}
-\begin{align}\label{eq11}
-	\myvec{X & Y} \myvec{u_1 & v_1 \\ u_2 & v_2} \myvec{\lambda_1 & 0\\ 0 & \lambda_2} \myvec{u_1 & u_2 \\ v_1 & v_2} \myvec{X \\ Y} = 0\\
-	\myvec{X^\prime & Y^\prime}  \myvec{\lambda_1 & 0\\ 0 & \lambda_2} \myvec{X^\prime \\ Y^\prime} = 0\\
+
+\begin{align}
+	&\myvec{X & Y} \myvec{u_1 & v_1 \\ u_2 & v_2} \myvec{\lambda_1 & 0\\ 0 & \lambda_2} \myvec{u_1 & u_2 \\ v_1 & v_2} \myvec{X \\ Y} = 0\label{eq11}\\
+	&\myvec{X^\prime & Y^\prime}  \myvec{\lambda_1 & 0\\ 0 & \lambda_2} \myvec{X^\prime \\ Y^\prime} = 0\\
 	\label{eq12}
-	\text{where } X^\prime = Xu_1 + Yu_2 \text{ and } Y^\prime = Xv_1 + Yv_2\\
+	&\text{where } X^\prime = Xu_1 + Yu_2 \text{ and } Y^\prime = Xv_1 + Yv_2\\
 	\label{eq13}
-	\implies \lambda_1 (X^\prime)^2 + \lambda_2 (Y^\prime)^2 = 0
+	&\implies \lambda_1 (X^\prime)^2 + \lambda_2 (Y^\prime)^2 = 0
 \end{align}
 \eqref{eq13} is called \textit{Spectral decomposition} of matrix
 \begin{align}
 	\implies X^\prime &= \pm \sqrt{-\frac{\lambda_2}{\lambda_1}}Y^\prime\\	
 	u_1X + u_2Y &= \pm \sqrt{-\frac{\lambda_2}{\lambda_1}}(v_1X + v_2Y)\\
-	\label{eq14}u_1(x-\alpha) + u_2(y-\beta) &= \pm \sqrt{-\frac{\lambda_2}{\lambda_1}}(v_1(x-\alpha) + v_2(y-\beta))
+	u_1(x-\alpha) + u_2(y-\beta) &= \pm \sqrt{-\frac{\lambda_2}{\lambda_1}}(v_1(x-\alpha) + v_2(y-\beta))\label{eq14}
 \end{align}
 Given equation is
 \begin{align}
@@ -211,7 +209,7 @@ codes/diagonalize1.py
 \end{lstlisting}
 Substituting \eqref{eq17}, \eqref{eq19} and \eqref{eq20} in \eqref{eq14},
 \begin{multline}\label{eq21}
-	\left(7-5 \sqrt{2}\right)\left(x-\frac{30}{23}\right) + \left(y+\frac{60}{23}\right) \\= \pm \sqrt{-\frac{\frac{5-5\sqrt{2}}{2}}{\frac{5+5\sqrt{2}}{2}}}\left(\left(7-5 \sqrt{2}\right)\left(x-\frac{30}{23}\right) + \left(y+\frac{60}{23}\right)\right)
+\implies	\left(7-5 \sqrt{2}\right)\left(x-\frac{30}{23}\right) + \left(y+\frac{60}{23}\right) \\= \pm \sqrt{-\frac{\frac{5-5\sqrt{2}}{2}}{\frac{5+5\sqrt{2}}{2}}}\left(\left(7-5 \sqrt{2}\right)\left(x-\frac{30}{23}\right) + \left(y+\frac{60}{23}\right)\right)
 \end{multline}
 simplifying \ref{eq21}, we get:
 \begin{align}
