@@ -161,31 +161,6 @@ Let $(\alpha,\beta)$ be their point of intersection, then
 \begin{equation}\label{eq6}
 	\myvec{ a & h\\ h & b}\myvec{\alpha \\ \beta} = \myvec{-d \\ -e}
 \end{equation}
-Under \textit{Affine transformation},
-\begin{align}
-	\vec{x} &= \vec{M}\vec{y} + c\\
-	\myvec{x \\ y} &= \myvec{1 & 0 \\ 0 & 1} \myvec{X \\ Y} + \myvec{\alpha \\ \beta}\\
-	\label{eq7}\myvec{x \\ y} &= \myvec{X+\alpha \\ Y+\beta}
-\end{align}
-\eqref{eq5} under transformation \eqref{eq7} will become,
-\begin{align}
-aX^2 + 2bXY + cY^2 = 0\label{eq8}\\
-\myvec{X & Y} \myvec{a & h \\ h & b} \myvec{X \\ Y} = 0\label{eq9}
-\end{align}
-\begin{align}
-	&\myvec{X & Y} \myvec{u_1 & v_1 \\ u_2 & v_2} \myvec{\lambda_1 & 0\\ 0 & \lambda_2} \myvec{u_1 & u_2 \\ v_1 & v_2} \myvec{X \\ Y} = 0\label{eq11}\\
-	&\myvec{X^\prime & Y^\prime}  \myvec{\lambda_1 & 0\\ 0 & \lambda_2} \myvec{X^\prime \\ Y^\prime} = 0\\
-	\label{eq12}
-	&\text{where } X^\prime = Xu_1 + Yu_2 \text{ and } Y^\prime = Xv_1 + Yv_2\\
-	\label{eq13}
-	&\implies \lambda_1 (X^\prime)^2 + \lambda_2 (Y^\prime)^2 = 0
-\end{align}
-\eqref{eq13} is called \textit{Spectral decomposition} of matrix
-\begin{align}
-	\implies X^\prime &= \pm \sqrt{-\frac{\lambda_2}{\lambda_1}}Y^\prime\\	
-	u_1X + u_2Y &= \pm \sqrt{-\frac{\lambda_2}{\lambda_1}}(v_1X + v_2Y)\\
-	u_1(x-\alpha) + u_2(y-\beta) &= \pm \sqrt{-\frac{\lambda_2}{\lambda_1}}(v_1(x-\alpha) + v_2(y-\beta))\label{eq14}
-\end{align}
 Given equation is
 \begin{align}
 	-x^2-xy+6y^2+30y+36=0
@@ -206,7 +181,10 @@ P and D are also verified using python code from
 \begin{lstlisting}
 codes/diagonalize1.py
 \end{lstlisting}
-Substituting \eqref{eq17}, \eqref{eq19} and \eqref{eq20} in \eqref{eq14},
+Using, \eqref{eq17}, \eqref{eq19} and \eqref{eq20} in,
+\begin{align}
+	u_1(x-\alpha) + u_2(y-\beta) &= \pm \sqrt{-\frac{\lambda_2}{\lambda_1}}(v_1(x-\alpha) + v_2(y-\beta))\label{eq14}
+\end{align}
 \begin{multline}\label{eq21}
 \implies	\left(7-5 \sqrt{2}\right)\left(x-\frac{30}{23}\right) + \left(y+\frac{60}{23}\right) \\= \pm \sqrt{-\frac{\frac{5-5\sqrt{2}}{2}}{\frac{5+5\sqrt{2}}{2}}}\left(\left(7-5 \sqrt{2}\right)\left(x-\frac{30}{23}\right) + \left(y+\frac{60}{23}\right)\right)
 \end{multline}
