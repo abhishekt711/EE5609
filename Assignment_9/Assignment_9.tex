@@ -142,24 +142,23 @@ let $\alpha=\myvec{x_1,x_2}$ and $\beta=\myvec{y_1,y_2}$ be vectors in $\mathbb{
 $x_1y_1+x_2y_2=0$;\quad $x_1^2+x_2^2=y_1^2+y_2^2=1$.\\
 Proove that $\ss=\{\vec{\alpha},\vec{\beta}\}$ is a basis of $\mathbb{R}^2$. Find the coordinates of the vector $\myvec{a,b}$ in the ordered basis $\ss=\{\vec{\alpha},\vec{\beta}\}$. (The conditions on $\alpha$ and $\beta$ say, geometrically, that $\alpha$ and $\beta$ are perpendicular and each has length 1).
 \section{Solution}
-we need to show that $\alpha$ and $\beta$ are independent in order to proove that $\ss=\{\vec{\alpha},\vec{\beta}\}$ is a basis of $\mathbb{R}^2$
+we need to show that $\alpha$ and $\beta$ are independent in order to proove that $\ss=\{\vec{\alpha},\vec{\beta}\}$ is a basis of $\mathbb{R}^2$.\\
+Given in the question are:
 \begin{align}
-x_1y_1+x_2y_2=0\label{eq0}\\
-x_1^2+x_2^2=y_1^2+y_2^2=1 \label{eq1}
+\alpha\beta^T&=0\label{eq0}\\
+\norm{\alpha}^2 &=\norm{\beta}^2=1 \label{eq1}
 \end{align}
 \ref{eq1} show that $\alpha$ and $\beta$ are non zero vector.\\
 Let suppose,
 \begin{align}
-&\beta=c\alpha\label{eq2}\\
-&\implies y_1=cx_1 ; \quad y_2=cx_2\\
-&\implies x_1y_1+x_2y_2=0\label{eq4}\\
-\implies&x_1y_1+x_2y_2=cx_1^2+cx_2^2=c(x_1^2+x_2^2)=c\label{eq5}
+\beta&=c\alpha\label{eq2}\\
+\implies \alpha\beta^T&=c\alpha\alpha^T=c\norm{\alpha}^2=c\label{eq3}
 \end{align}
-The given equation \ref{eq4} and \ref{eq5} contradicts the equation \ref{eq2} for any non-zero value of $c$. Equation \ref{eq4} and \ref{eq5} satisfy only when $c=0$.
+The given equation \ref{eq0} and \ref{eq3} contradicts for any non-zero value of $c$. Equation \ref{eq0} and \ref{eq3} satisfy only when $c=0$.
 Thus, $\alpha$ and $\beta$ are independent. \\
 Hence, $\ss=\{\vec{\alpha},\vec{\beta}\}$ is a basis of $\mathbb{R}^2$.\\
 To, find the coordinates of the vector $\myvec{a,b}$ in the ordered basis $\ss=\{\vec{\alpha},\vec{\beta}\}$. We
-can row-reduce the augmented matrix
+can row-reduce the augmented matrix,
    \begin{align}
       \myvec{x_1&y_1&\vrule&a\\x_2&y_2&\vrule&b}\\
         \xleftrightarrow{R_1=\frac{R_1}{x_1}}\myvec{1&\frac{y_1}{x_1}&\vrule&\frac{a}{x_1}\\x_2&y_2&\vrule&b}\\
@@ -174,8 +173,8 @@ Using \ref{eq0} and \ref{eq1} and simplifying in \ref{eq12},
 \end{align}
 Hence,
 \begin{align}
-&\implies \myvec{a,b}=(ax_1+bx_2)\vec{\alpha}+(ay_1+by_2)\vec{\beta}\\
-&\therefore \myvec{a,b}=(ax_1+bx_2)\myvec{x_1,x_2}+(ay_1+by_2)\myvec{y_1,y_2}
+\implies \myvec{a\\b}&=\myvec{\alpha & \beta}\myvec{ax_1+bx_2\\ay_1+by_2}\\
+ \therefore \myvec{a\\b}&=\myvec{x_1&y_1 \\ x_2&y_2}\myvec{ax_1+bx_2\\ay_1+by_2}
 \end{align}
 
 \end{document}
