@@ -138,21 +138,21 @@ Download all solutions from
 https://github.com/abhishekt711/EE5609/tree/master/Assignment_9
 \end{lstlisting}
 \section{Problem}
-let $\alpha=\myvec{x_1,x_2}$ and $\beta=\myvec{y_1,y_2}$ be vectors in $\mathbb{R}^2$ such that\\
+let $\alpha=\myvec{x_1\\x_2}$ and $\beta=\myvec{y_1\\y_2}$ be vectors in $\mathbb{R}^2$ such that\\
 $x_1y_1+x_2y_2=0$;\quad $x_1^2+x_2^2=y_1^2+y_2^2=1$.\\
 Proove that $\ss=\{\vec{\alpha},\vec{\beta}\}$ is a basis of $\mathbb{R}^2$. Find the coordinates of the vector $\myvec{a,b}$ in the ordered basis $\ss=\{\vec{\alpha},\vec{\beta}\}$. (The conditions on $\alpha$ and $\beta$ say, geometrically, that $\alpha$ and $\beta$ are perpendicular and each has length 1).
 \section{Solution}
 we need to show that $\alpha$ and $\beta$ are independent in order to proove that $\ss=\{\vec{\alpha},\vec{\beta}\}$ is a basis of $\mathbb{R}^2$.\\
 Given in the question are:
 \begin{align}
-\alpha\beta^T&=0\label{eq0}\\
+\alpha^T\beta&=0\label{eq0}\\
 \norm{\alpha}^2 &=\norm{\beta}^2=1 \label{eq1}
 \end{align}
 \ref{eq1} show that $\alpha$ and $\beta$ are non zero vector.\\
 Let suppose,
 \begin{align}
 \beta&=c\alpha\label{eq2}\\
-\implies \alpha\beta^T&=c\alpha\alpha^T=c\norm{\alpha}^2=c\label{eq3}
+\implies \alpha^T\beta&=c\alpha^T\alpha=c\norm{\alpha}^2=c\label{eq3}
 \end{align}
 The given equation \ref{eq0} and \ref{eq3} contradicts for any non-zero value of $c$. Equation \ref{eq0} and \ref{eq3} satisfy only when $c=0$.
 Thus, $\alpha$ and $\beta$ are independent. \\
