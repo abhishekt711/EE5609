@@ -142,7 +142,7 @@ let $\alpha=\myvec{x_1\\x_2}$ and $\beta=\myvec{y_1\\y_2}$ be vectors in $\mathb
 $x_1y_1+x_2y_2=0$;\quad $x_1^2+x_2^2=y_1^2+y_2^2=1$.\\
 Proove that $\ss=\{\vec{\alpha},\vec{\beta}\}$ is a basis of $\mathbb{R}^2$. Find the coordinates of the vector $\myvec{a,b}$ in the ordered basis $\ss=\{\vec{\alpha},\vec{\beta}\}$. (The conditions on $\alpha$ and $\beta$ say, geometrically, that $\alpha$ and $\beta$ are perpendicular and each has length 1).
 \section{Solution}
-we need to show that $\alpha$ and $\beta$ are independent in order to proove that $\ss=\{\vec{\alpha},\vec{\beta}\}$ is a basis of $\mathbb{R}^2$.\\
+we need to show that $\alpha$ and $\beta$ are linearly independent in order to proove that $\ss=\{\vec{\alpha},\vec{\beta}\}$ is a basis of $\mathbb{R}^2$.\\
 
 
 Given in the question are:
@@ -156,17 +156,11 @@ Let,
 \end{align}
 then,
 \begin{align}
- \vec{A}^T\vec{A}&=\myvec{x_1^2+x_2^2 &x_1y_1+x_2y_2\\x_1y_1+x_2y_2&y_1^2+y_2^2}\\ &=\myvec{1&0\\0&1}
+ \vec{A}^T\vec{A}&=\myvec{\norm{\alpha}^2 &\alpha^T\beta\\\alpha^T\beta&\norm{\beta}^2}\\ &=\myvec{1&0\\0&1}\\
+ \therefore \vec{A}^T\vec{A}&=\vec{I}
 \end{align}
-Thus, $\vec{A}$ is othogonal.\\
-Also, \ref{eq1} show that $\alpha$ and $\beta$ are non zero vector.\\
-Let suppose,
-\begin{align}
-\beta&=c\alpha\label{eq2}\\
-\implies \alpha^T\beta&=c\alpha^T\alpha=c\norm{\alpha}^2=c\label{eq3}
-\end{align}
-The given equation \ref{eq0} and \ref{eq3} contradicts for any non-zero value of $c$. Equation \ref{eq0} and \ref{eq3} satisfy only when $c=0$.
-Thus, $\alpha$ and $\beta$ are independent. \\
+Inverse of $\vec{A}$ exist. $\vec{A}^T$ is the inverse of $\vec{A}$. 
+Thus, the columns of $\vec{A}$ are linearly independent i.e, $\alpha$ and $\beta$ are linearly independent. \\
 Hence, $\ss=\{\vec{\alpha},\vec{\beta}\}$ is a basis of $\mathbb{R}^2$.\\
 
 
