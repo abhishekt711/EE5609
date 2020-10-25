@@ -143,12 +143,23 @@ $x_1y_1+x_2y_2=0$;\quad $x_1^2+x_2^2=y_1^2+y_2^2=1$.\\
 Proove that $\ss=\{\vec{\alpha},\vec{\beta}\}$ is a basis of $\mathbb{R}^2$. Find the coordinates of the vector $\myvec{a,b}$ in the ordered basis $\ss=\{\vec{\alpha},\vec{\beta}\}$. (The conditions on $\alpha$ and $\beta$ say, geometrically, that $\alpha$ and $\beta$ are perpendicular and each has length 1).
 \section{Solution}
 we need to show that $\alpha$ and $\beta$ are independent in order to proove that $\ss=\{\vec{\alpha},\vec{\beta}\}$ is a basis of $\mathbb{R}^2$.\\
+
+
 Given in the question are:
 \begin{align}
 \alpha^T\beta&=0\label{eq0}\\
 \norm{\alpha}^2 &=\norm{\beta}^2=1 \label{eq1}
 \end{align}
-\ref{eq1} show that $\alpha$ and $\beta$ are non zero vector.\\
+Let,
+\begin{align}
+ \vec{A}=\myvec{\alpha & \beta}=\myvec{x_1&y_1\\x_2&y_2}
+\end{align}
+then,
+\begin{align}
+ \vec{A}^T\vec{A}&=\myvec{x_1^2+x_2^2 &x_1y_1+x_2y_2\\x_1y_1+x_2y_2&y_1^2+y_2^2}\\ &=\myvec{1&0\\0&1}
+\end{align}
+Thus, $\vec{A}$ is othogonal.\\
+Also, \ref{eq1} show that $\alpha$ and $\beta$ are non zero vector.\\
 Let suppose,
 \begin{align}
 \beta&=c\alpha\label{eq2}\\
@@ -157,6 +168,9 @@ Let suppose,
 The given equation \ref{eq0} and \ref{eq3} contradicts for any non-zero value of $c$. Equation \ref{eq0} and \ref{eq3} satisfy only when $c=0$.
 Thus, $\alpha$ and $\beta$ are independent. \\
 Hence, $\ss=\{\vec{\alpha},\vec{\beta}\}$ is a basis of $\mathbb{R}^2$.\\
+
+
+
 To, find the coordinates of the vector $\myvec{a,b}$ in the ordered basis $\ss=\{\vec{\alpha},\vec{\beta}\}$. We
 can row-reduce the augmented matrix,
    \begin{align}
