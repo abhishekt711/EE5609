@@ -167,29 +167,18 @@ Hence, $\ss=\{\vec{\alpha},\vec{\beta}\}$ is a basis of $\mathbb{R}^2$.\\
 
 To, find the coordinates of the vector $\myvec{a,b}$ in the ordered basis $\ss=\{\vec{\alpha},\vec{\beta}\}$. 
    \begin{align}
-   \myvec{\alpha&\beta}\myvec{c1\\c2}=\myvec{a\\b}\\
-   c_1x_1+c_2y_1=a\\
-   c_1x_2+c_2y_2=b
-   \end{align}
-   We can row-reduce the augmented matrix to find the constant $c_1$ and $c_2$,
-   \begin{align}
-      \myvec{x_1&y_1&\vrule&a\\x_2&y_2&\vrule&b}\\
-        \xleftrightarrow{R_1=\frac{R_1}{x_1}}\myvec{1&\frac{y_1}{x_1}&\vrule&\frac{a}{x_1}\\x_2&y_2&\vrule&b}\\
-     \xleftrightarrow{R_2=R_2-x_2R_1}\myvec{1&\frac{y_1}{x_1}&\vrule&\frac{a}{x_1}\\0&y_2-\frac{x_2y_1}{x_1}&\vrule&b-\frac{x_2a}{x_1}}\\
-     =\myvec{1&\frac{y_1}{x_1}&\vrule&\frac{a}{x_1}\\0&\frac{x_1y_2-x_2y_1}{x_1}&\vrule&\frac{x_1b-x_2a}{x_1}}\\
-      \xleftrightarrow{R_2=\left(\frac{x_1}{x_1y_2-x_2y_1}\right)R_2}\myvec{1&\frac{y_1}{x_1}&\vrule&\frac{a}{x_1}\\0&1&\vrule&\frac{x_1b-x_2a}{x_1y_2-x_2y_1}}\\
-      \xleftrightarrow{R_1=R_1-\left(\frac{y_1}{x_1}\right)R_2}\myvec{1&0&\vrule&\frac{ay_2-by_1}{x_1y_2-x_2y_1}\\0&1&\vrule&\frac{x_1b-x_2a}{x_1y_2-x_2y_1}}\label{eq12}
-\end{align}
-Using \ref{eq0} and \ref{eq1} and simplifying in \ref{eq12},
-\begin{align}
-=\myvec{1&0&\vrule&ax_1+bx_2\\0&1&\vrule&ay_1+by_2}
+   \myvec{\alpha&\beta}\myvec{c_1\\c_2}=\myvec{a\\b}\\
+\myvec{A}\myvec{c_1\\c_2}=\myvec{a\\b}\\
+\myvec{c_1\\c_2}=\myvec{A}^{-1}\myvec{a\\b}\\
+\myvec{c_1\\c_2}=\myvec{A}^T\myvec{a\\b}\\
+\myvec{c_1\\c_2}=\myvec{x_1&x_2\\y_1&y_2}\myvec{a\\b}
 \end{align}
 \begin{align}
 \therefore c_1&=ax_1+bx_2\\
 \therefore c_2&=ay_1+by_2\\
 %\implies \myvec{a\\b}&=\myvec{\alpha & \beta}\myvec{ax_1+bx_2\\ay_1+by_2}\\
 \text{Hence,} \nonumber\\
- \myvec{a\\b}&=(ax_1+bx_2)\myvec{\alpha}+(ay_1+by_2)\myvec{\beta}
+ \myvec{a\\b}&=\myvec{\alpha&\beta}\myvec{ax_1+bx_2\\ay_1+by_2}
 \end{align}
-
+ 
 \end{document}
