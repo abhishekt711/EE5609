@@ -182,7 +182,11 @@ Using \ref{eq0} and \ref{eq1} and simplifying in \ref{eq12},
 Hence,
 \begin{align}
 \implies \myvec{a\\b}&=\myvec{\alpha & \beta}\myvec{ax_1+bx_2\\ay_1+by_2}\\
- \therefore \myvec{a\\b}&=\myvec{x_1&y_1 \\ x_2&y_2}\myvec{ax_1+bx_2\\ay_1+by_2}
+\therefore \myvec{a\\b}&=(ax_1+bx_2)\myvec{\alpha}+(ay_1+by_2)\myvec{\beta}
+%\implies \myvec{a\\b}&=\myvec{\alpha & \beta}\left(a\myvec{\alpha}+b\myvec{\beta}\right)\\
+% \implies \myvec{a\\b}&=\myvec{x_1&y_1 \\ x_2&y_2}\myvec{ax_1+bx_2\\ay_1+by_2}\\
+% &=\myvec{a(x_1^2+y_1^2)+b(x_1x_2+y_1y_2)\\b(x_2^2+y_2^2)+a(x_1x_2+y_1y_2)}\\
+%  &=\myvec{a\norm{\alpha}^2+b(x_1x_2+y_1y_2)\\b\norm{\beta}^2+a(x_1x_2+y_1y_2)}\\
 \end{align}
 
 \end{document}
