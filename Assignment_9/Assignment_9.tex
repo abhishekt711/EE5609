@@ -168,6 +168,10 @@ Hence, $\ss=\{\vec{\alpha},\vec{\beta}\}$ is a basis of $\mathbb{R}^2$.\\
 To, find the coordinates of the vector $\myvec{a,b}$ in the ordered basis $\ss=\{\vec{\alpha},\vec{\beta}\}$. We
 can row-reduce the augmented matrix,
    \begin{align}
+   \myvec{\alpha}+\myvec{\beta}=\myvec{a\\b}
+   \end{align}
+   The aumented matrix can be given as:
+   \begin{align}
       \myvec{x_1&y_1&\vrule&a\\x_2&y_2&\vrule&b}\\
         \xleftrightarrow{R_1=\frac{R_1}{x_1}}\myvec{1&\frac{y_1}{x_1}&\vrule&\frac{a}{x_1}\\x_2&y_2&\vrule&b}\\
      \xleftrightarrow{R_2=R_2-x_2R_1}\myvec{1&\frac{y_1}{x_1}&\vrule&\frac{a}{x_1}\\0&y_2-\frac{x_2y_1}{x_1}&\vrule&b-\frac{x_2a}{x_1}}\\
