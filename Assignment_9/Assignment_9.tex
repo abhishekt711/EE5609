@@ -165,12 +165,13 @@ Hence, $\ss=\{\vec{\alpha},\vec{\beta}\}$ is a basis of $\mathbb{R}^2$.\\
 
 
 
-To, find the coordinates of the vector $\myvec{a,b}$ in the ordered basis $\ss=\{\vec{\alpha},\vec{\beta}\}$. We
-can row-reduce the augmented matrix,
+To, find the coordinates of the vector $\myvec{a,b}$ in the ordered basis $\ss=\{\vec{\alpha},\vec{\beta}\}$. 
    \begin{align}
-   \myvec{\alpha}+\myvec{\beta}=\myvec{a\\b}
+   c_1\myvec{\alpha}+c_2\myvec{\beta}=\myvec{a\\b}\\
+   c_1x_1+c_2y_1=a\\
+   c_1x_2+c_2y_2=b
    \end{align}
-   The aumented matrix can be given as:
+   We can row-reduce the augmented matrix to find the constant $c_1$ and $c_2$,
    \begin{align}
       \myvec{x_1&y_1&\vrule&a\\x_2&y_2&\vrule&b}\\
         \xleftrightarrow{R_1=\frac{R_1}{x_1}}\myvec{1&\frac{y_1}{x_1}&\vrule&\frac{a}{x_1}\\x_2&y_2&\vrule&b}\\
@@ -183,14 +184,12 @@ Using \ref{eq0} and \ref{eq1} and simplifying in \ref{eq12},
 \begin{align}
 =\myvec{1&0&\vrule&ax_1+bx_2\\0&1&\vrule&ay_1+by_2}
 \end{align}
-Hence,
 \begin{align}
-\implies \myvec{a\\b}&=\myvec{\alpha & \beta}\myvec{ax_1+bx_2\\ay_1+by_2}\\
-\therefore \myvec{a\\b}&=(ax_1+bx_2)\myvec{\alpha}+(ay_1+by_2)\myvec{\beta}
-%\implies \myvec{a\\b}&=\myvec{\alpha & \beta}\left(a\myvec{\alpha}+b\myvec{\beta}\right)\\
-% \implies \myvec{a\\b}&=\myvec{x_1&y_1 \\ x_2&y_2}\myvec{ax_1+bx_2\\ay_1+by_2}\\
-% &=\myvec{a(x_1^2+y_1^2)+b(x_1x_2+y_1y_2)\\b(x_2^2+y_2^2)+a(x_1x_2+y_1y_2)}\\
-%  &=\myvec{a\norm{\alpha}^2+b(x_1x_2+y_1y_2)\\b\norm{\beta}^2+a(x_1x_2+y_1y_2)}\\
+\therefore c_1&=ax_1+bx_2\\
+\therefore c_2&=ay_1+by_2\\
+%\implies \myvec{a\\b}&=\myvec{\alpha & \beta}\myvec{ax_1+bx_2\\ay_1+by_2}\\
+\text{Hence,} \nonumber\\
+ \myvec{a\\b}&=(ax_1+bx_2)\myvec{\alpha}+(ay_1+by_2)\myvec{\beta}
 \end{align}
 
 \end{document}
