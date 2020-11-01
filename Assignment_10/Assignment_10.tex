@@ -142,9 +142,13 @@ Consider the vectors in $\mathbb{R}^4$ defined by:\\
 $\alpha_1=\myvec{-1\\0\\1\\2}$, $\alpha_2=\myvec{3\\4\\-2\\5}$ and $\alpha_3=\myvec{1\\4\\0\\9}$.\\
 Find a system of homogeneous linear equations for which the space of solutions is exactly the subspace of $\mathbb{R}^4$ spanned by the given three vectors.\\
 \section{Solution}
+A system of linear equations is homogeneous if all of the constant terms are zero. It can be represented as,
 \begin{align}
-\myvec{1\\4\\0\\9}=2\myvec{-1\\0\\1\\2}+\myvec{3\\4\\-2\\5}\\
-\alpha_3=2\alpha_1+\alpha_2
+A\vec{X}=0
+\end{align}
+\begin{align}
+\implies \myvec{1\\4\\0\\9}=2\myvec{-1\\0\\1\\2}+\myvec{3\\4\\-2\\5}\\
+\therefore \alpha_3=2\alpha_1+\alpha_2
 \end{align}
 As $\alpha_3$ is dependent on $\alpha_1$ and $\alpha_2$. The system of homogeneous linear equation is spanned by $\alpha_1$ and $\alpha_2$ only.\\
 Let, 
@@ -161,7 +165,7 @@ By operating column operation on $\vec{A}$, we get:
 \end{align}
 The required system of homogeneous linear equation are given as:
 \begin{align}
-\vec{Y}=\myvec{1&0&0\\0&1&0\\-1&\frac{1}{4}&0\\-2&\frac{11}{4}&0}\myvec{x_1\\x_2\\x_3}
+\vec{Y}=\myvec{1&0&0\\0&1&0\\-1&\frac{1}{4}&0\\-2&\frac{11}{4}&0}\vec{X}
 \end{align}
 
 \end{document}
