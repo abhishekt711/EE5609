@@ -163,25 +163,12 @@ The bais vector is non zero vector which are given from \ref{eq14},\\
 \begin{align}
 \rho_1=\myvec{1\\0\\-1\\-2}, \rho_2=\myvec{0\\1\\\frac{1}{4}\\\frac{11}{4}}
 \end{align}
-Vector $\vec{V}$ formed using the above basis vectors are given as,
+%Vector $\vec{V}$ formed using the above basis vectors are given as,
+%\begin{align}
+%c_1\rho_1+c_2\rho_2=\myvec{c_1\\c_2\\-c_1+\frac{1}{4}c_2\\-2c_2+\frac{11}{4}}
+%\end{align}
+$\rho_1$, $\rho_2$ forms the basis of the solution space. The required homogeneous matrix equation is given as:
 \begin{align}
-c_1\rho_1+c_2\rho_2=\myvec{c_1\\c_2\\-c_1+\frac{1}{4}c_2\\-2c_2+\frac{11}{4}}
-\end{align}
-If $\vec{X}$ is in $\vec{V}$, so it can be written in this form.\\
-\begin{align}
-\implies \myvec{1&0\\0&1\\-1&\frac{1}{4}\\-2&\frac{11}{4}}\myvec{c_1\\c_2}=\vec{X} \label{eq15} 
-\end{align}
-The augmented matrix using \ref{eq15} can be written as,
-\begin{align}
-\myvec{1&0&x_1\\0&1&x_2\\-1&\frac{1}{4}&x_3\\-2&\frac{11}{4}&x_4}
-\end{align}
-Converting the above augmented matrix into row reduced echelon form:
-\begin{align}
-\myvec{1&0&x_1\\0&1&x_2\\-1&\frac{1}{4}&x_3\\-2&\frac{11}{4}&x_4}\xleftrightarrow{R_3=R_3+R_1-\frac{1}{4}R_2, R_4=R_4+2R_1-\frac{11}{4}R_2} \nonumber\\
-\myvec{1&0&x_1\\0&1&x_2\\0&0&x_1-\frac{1}{4}x_2+x_3\\0&0&2x_1-\frac{11}{4}x_2+x_4}\label{eq16}
-\end{align}
-From \ref{eq16}, the basis vector for the solution space is $\myvec{x_1\\x_2}$. The solution space is given as,
-\begin{align}
-\vec{X}=\myvec{x_1\\x_2\\x_1-\frac{1}{4}x_2\\2x_1-\frac{11}{4}x_2}
+ \vec{Y}= \myvec{1&0\\0&1\\-1&\frac{1}{4}\\-2&\frac{11}{4}}\vec{X}
 \end{align}
 \end{document}
