@@ -157,11 +157,32 @@ By operating column operation on $\vec{A}$, we get:
  \xleftrightarrow{C_3=C_3-2C_1-C_2}\myvec{-1&3&0\\0&4&0\\1&-2&0\\2&5&0}\\
   \xleftrightarrow{C_1=-C_1}\myvec{1&3&0\\0&4&0\\-1&-2&0\\-2&5&0}\\
   \xleftrightarrow{C_2=C_2-3C_1}\myvec{1&0&0\\0&4&0\\-1&1&0\\-2&11&0}\\
-  \xleftrightarrow{C_2=\frac{1}{4}C_2}\myvec{1&0&0\\0&1&0\\-1&\frac{1}{4}&0\\-2&\frac{11}{4}&0}
+  \xleftrightarrow{C_2=\frac{1}{4}C_2}\myvec{1&0&0\\0&1&0\\-1&\frac{1}{4}&0\\-2&\frac{11}{4}&0}\label{eq14}
 \end{align}
-The required system of homogeneous linear equations for which the space of solution is exactly the subspace of subspace of $\mathbb{R}^4$ spanned by the given three vectors are given as:
+The bais vector is non zero vector which are given from \ref{eq14},\\
 \begin{align}
-\vec{Y}=\myvec{1&0&0\\0&1&0\\-1&\frac{1}{4}&0\\-2&\frac{11}{4}&0}\vec{X}
+\rho_1=\myvec{1\\0\\-1\\-2}, \rho_2=\myvec{0\\1\\\frac{1}{4}\\\frac{11}{4}}
+\end{align}
+Vector $\vec{V}$ formed using the above basis vectors are given as,
+\begin{align}
+c_1\rho_1+c_2\rho_2=\myvec{c_1\\c_2\\-c_1+\frac{1}{4}c_2\\-2c_2+\frac{11}{4}}
+\end{align}
+If $\vec{X}$ is in $\vec{V}$, so it can be written in this form.\\
+\begin{align}
+\implies \myvec{1&0\\0&1\\-1&\frac{1}{4}\\-2&\frac{11}{4}}\myvec{c_1\\c_2}=\vec{X} \label{eq15} 
+\end{align}
+The augmented matrix using \ref{eq15} can be written as,
+\begin{align}
+\myvec{1&0&x_1\\0&1&x_2\\-1&\frac{1}{4}&x_3\\-2&\frac{11}{4}&x_4}
+\end{align}
+Converting the above augmented matrix into row reduced echelon form:
+\begin{align}
+\myvec{1&0&x_1\\0&1&x_2\\-1&\frac{1}{4}&x_3\\-2&\frac{11}{4}&x_4}\xleftrightarrow{R_3=R_3+R_1-\frac{1}{4}R_2, R_4=R_4+2R_1-\frac{11}{4}R_2} \nonumber\\
+\myvec{1&0&x_1\\0&1&x_2\\0&0&x_1-\frac{1}{4}x_2+x_3\\0&0&2x_1-\frac{11}{4}x_2+x_4}
+\end{align}
+The required equation is given as:
+\begin{align}
+\vec{Y}=\myvec{x_1\\x_2\\x_1-\frac{1}{4}x_2\\2x_1-\frac{11}{4}x_2}
 \end{align}
 
 \end{document}
