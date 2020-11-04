@@ -167,8 +167,12 @@ The bais vector is non zero vector which are given from \ref{eq14},\\
 %\begin{align}
 %c_1\rho_1+c_2\rho_2=\myvec{c_1\\c_2\\-c_1+\frac{1}{4}c_2\\-2c_2+\frac{11}{4}}
 %\end{align}
-$\rho_1$, $\rho_2$ forms the basis of the solution space. The required homogeneous matrix equation is given as:
+$\rho_1$, $\rho_2$ forms the basis of the solution space. The subspace spanned by $b_1$ and $b_2$ is given as:
 \begin{align}
- \myvec{x\\y\\z\\w}= \myvec{1&0\\0&1\\-1&\frac{1}{4}\\-2&\frac{11}{4}}\vec{X}
+b_1\rho_1+b_2\rho_2=\myvec{b_1\\b_2\\-b_1+\frac{1}{4}b_2\\-2b_1+\frac{11}{4}b_2}
+ \end{align}
+  The required homogeneous matrix equation to be in the subspace is given as:
+ \begin{align}
+\myvec{-1&\frac{1}{4}&-1&0\\-2&\frac{11}{4}&0&-1}\vec{X}=0
 \end{align}
 \end{document}
