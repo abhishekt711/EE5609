@@ -156,7 +156,7 @@ By row reducing on $\vec{A}$, we get:
 \vec{A}=\myvec{-1&0&1&2\\3&4&-2&5\\1&4&0&9}
  \xleftrightarrow{R_3=R_3-2R_1-R_2}\myvec{-1&0&1&2\\3&4&-2&5\\0&0&0&0}\\
   \xleftrightarrow{R_2=R_2+3R_1}\myvec{-1&0&1&2\\0&4&1&11\\0&0&0&0}\\
-  \xleftrightarrow{R_1=-R_1,R_2=\frac{1}{4}R_2}\myvec{1&0&-1&-2\\0&1&\frac{1}{4}&\frac{11}{4}\\0&0&0&0}\label{eq14}
+  \xleftrightarrow{R_1=-R_1}\myvec{1&0&-1&-2\\0&4&1&11\\0&0&0&0}\label{eq14}
 \end{align}
 The bais vector is non zero vector which are given from \ref{eq14},\\
 \begin{align}
@@ -168,12 +168,12 @@ $\rho_1$, $\rho_2$ forms the basis of the solution space. The subspace spanned b
  \end{align}
  Using \ref{eq15}, we can write the augmented matrix as:
  \begin{align}
-\myvec{1&0&x_1\\0&4&x_2\\-1&1&x_3\\-2&11&x_4}\xleftrightarrow{R_3=R_3+R_1-\frac{1}{4}R_2}\\
-\myvec{1&0&x_1\\0&4&x_2\\0&0&x_1-\frac{1}{4}x_2+x_3\\-2&11&x_4}\xleftrightarrow{R_4=R_4+2R_1-\frac{11}{4}R_2}\\
-\myvec{1&0&x_1\\0&4&x_2\\0&0&x_1-\frac{1}{4}x_2+x_3\\0&0&2x_1-\frac{11}{4}x_2+x_4}\label{eq16}
+\myvec{1&0&x_1\\0&4&x_2\\-1&1&x_3\\-2&11&x_4}\xleftrightarrow{R_3=4R_3+4R_1-R_2}\\
+\myvec{1&0&x_1\\0&4&x_2\\0&0&4x_1-x_2+4x_3\\-2&11&x_4}\xleftrightarrow{R_4=4R_4+8R_1-11R_2}\\
+\myvec{1&0&x_1\\0&4&x_2\\0&0&4x_1-x_2+4x_3\\0&0&8x_1-11x_2+4x_4}\label{eq16}
 \end{align}
 Using \ref{eq16}, The required homogeneous equation is given as:
 \begin{align}
-\myvec{1&-\frac{1}{4}&1&0\\2&-\frac{11}{4}&0&1}\vec{X}=0
+\myvec{4&-1&4&0\\8&-11&0&4}\vec{X}=0
 \end{align}
 \end{document}
