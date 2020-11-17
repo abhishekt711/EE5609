@@ -159,18 +159,21 @@ Characteristic equation of $\vec{T}$ can be written as:
  \begin{align}
      -\lambda^{3}-\lambda + 2 = 0
  \end{align}
- The characteristics equation will satisfy its own matrix 
- \begin{align}
+Now, Using the Cayley Hamilton Theorem, we get:
+\begin{align}
      -\vec{T}^{3}-\vec{T}+2\vec{I}=\vec{0}\label{eq1}
  \end{align}
-The given polynomial 
+The polynomial $f(\vec{T})$ can be written using the chracteristic function of $\vec{T}$ as follows,
  \begin{align}
-     f\brak{x}=-x^{3}+2\\
      f\brak{\vec{T}}=-\vec{T}^{3}+2\vec{I}\\
      f\brak{\vec{T}}=-\vec{T}^{3}-\vec{T}+2\vec{I}+\vec{T}\label{eq2}
+     \end{align}
+     Using \ref{eq1} in \ref{eq2}, We get:
+     \begin{align}
+     f\brak{\vec{T}}=\vec{T}
  \end{align}
-Substituting the characteristics equation from \eqref{eq1} in \eqref{eq2}, we get
+Hence,
  \begin{align}
-     f\brak{\vec{T}}=\vec{T}=\myvec{1&0&0\\0&0&1\\0&-2&-1}
+     f\brak{\vec{T}}=\myvec{1&0&0\\0&0&1\\0&-2&-1}
  \end{align}
 \end{document}
