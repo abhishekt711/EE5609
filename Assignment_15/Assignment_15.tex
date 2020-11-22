@@ -44,7 +44,7 @@
     \usepackage{lscape}     
 \usepackage{multicol}
 \usepackage{chngcntr}
-
+\usepackage{graphicx}
 \DeclareMathOperator*{\Res}{Res}
 
 \renewcommand\thesection{\arabic{section}}
@@ -147,6 +147,8 @@ $Definition$: Let $F$ be a field. An ideal in $F[x]$ is a subspace $M$ of $F[x]$
 
 \begin{table}[h!]
 \begin{center}
+\resizebox{\columnwidth}{!}
+{
 \begin{tabular}{|c|c|}
 \hline
 & \\
@@ -161,7 +163,7 @@ To prove & Given subset is an Ideal.\\
 & \\
 \hline
 & \\
-Proof  & Let, $M=\{f\in F[x]\quad |\quad f(2)=f(4)=0\}$.\\
+Proof  & Let, $M=\{f\in F[x] | f(2)=f(4)=0\}$.\\
 & $g(2)=g(4)=0 \text{  and } f(2)=f(4)=0$\\
 & \\
 & $(df+g)(2)=df(2)+g(2)=0$\\
@@ -186,6 +188,7 @@ of polynomial & When $f(c)=0$ then $r=0$.\\
 &\\
 \hline
 \end{tabular}
+}
 \end{center}
 \end{table}
 \end{document}
