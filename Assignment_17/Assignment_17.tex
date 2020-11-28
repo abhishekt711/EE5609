@@ -140,8 +140,6 @@ https://github.com/abhishekt711/EE5609/tree/master/Assignment_17
 \section{Problem}
 Usig the result of Exercise 8 to proove that , If $A$ and $B$ are $n \times n$ matrices over the field $F$, then $AB$ and $BA$ have precisely the same characteristic values.
 \section{solution}
-
-
 \begin{table}[h!]
 \begin{center}
 \resizebox{\columnwidth}{!}
@@ -150,6 +148,8 @@ Usig the result of Exercise 8 to proove that , If $A$ and $B$ are $n \times n$ m
 \hline
 & \\
 Given & $A$ and $B$ are $n \times n$ matrices over the field $F$.\\
+& In Exercise 8,\\
+& If $(I-AB)$ is invertible then $(I-BA)$ is invertible.\\
 &\\
 \hline
 & \\
@@ -162,12 +162,61 @@ Proof  & Let suppose $c$ is  the characteristic value of $AB$.\\
 & \\
 & Here, $I$, $A$ and $B$ are $n \times n$ matrix.\\
 & $\implies c^n|I-\frac{1}{c}AB|=0$ \\
+&\\
 & Using the result of Exercise $8$,\\
-& $c^n|I-\frac{1}{c}BA|=0$ \\
+& $(I-\frac{1}{c}AB)$ non-invertible $\implies (I-\frac{1}{c}BA)$ is also non-invertible.\\
+&\\
+& $\implies c^n|I-\frac{1}{c}BA|=0$ \\
 & \\
 & $\implies |cI-BA|=0$\\
 & \\
 & $AB$ and $BA$ have precisely the same characteristic value.\\
+& \\
+\hline
+\end{tabular}
+}
+\end{center}
+\end{table}
+
+Alternative Way, 
+\begin{table}[h!]
+\begin{center}
+\resizebox{\columnwidth}{!}
+{
+\begin{tabular}{|c|c|}
+\hline
+& \\
+Given & $A$ and $B$ are $n \times n$ matrices over the field $F$.\\
+& \\
+& In Exercise 8, If $(I-AB)$ is invertible\\
+& then $(I-BA)$ is invertible.\\
+&\\
+\hline
+& \\
+To prove & $AB$ and $BA$ have precisely the same characteristic values.\\
+& \\
+\hline
+&\\
+Observation & We have to show that if $c$ is a characteristic value for $AB$ \\
+& then $c$ is a characteristic value for $BA$.\\
+& Conversely, This is equivalent to the statement\\
+& if $c$ is not a characteristic value for $AB$\\
+& then it is not a characteristic value for $BA$.\\
+& \\
+\hline
+& \\
+Proof  & Suppose that c is not a characteristic value for $BA$,\\
+& this means that $|cI-AB|\neq0$.\\
+& \\
+& $\implies c^n|I-\frac{1}{c}AB|\neq0$\\
+& \\
+& $\therefore (I-\frac{1}{c}AB)$ is invertible $\implies (I-\frac{1}{c}BA)$ is invertible.\\
+& $\implies |I-\frac{1}{c}AB|\neq0$\\
+& \\
+& $\implies c^n|I-\frac{1}{c}AB|=c^n|I-\frac{1}{c}AB|\neq0$\\
+& \\
+& Hence, If $c$ is not a characteristic value for $AB$\\
+& then it is not a characteristic value for $BA$.\\
 & \\
 \hline
 \end{tabular}
