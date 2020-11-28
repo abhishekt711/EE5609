@@ -154,22 +154,20 @@ Given & $A$ and $B$ are $n \times n$ matrices over the field $F$.\\
 \hline
 & \\
 To prove & $AB$ and $BA$ have precisely the same characteristic values.\\
-&\\
- & $\implies det\myvec{cI-AB} = det\myvec{cI-BA}$ \\
 & \\
 \hline
 & \\
-Proof  & $det\myvec{cI-AB}=det\myvec{I&0\\A&cI-AB}$\\
-& $=det \left( \myvec{I&B\\A&cI}\myvec{I&-B\\0&I}  \right)$\\
-& $=det\myvec{I&B\\A&cI} det\myvec{I&-B\\0&I}$\\
-&\\
-& In the above equation $det\myvec{I&-B\\0&I}=1$\\
-&\\
-& $\implies det\myvec{I&B\\A&cI}=det\myvec{cI-BA&0\\A&I}$\\
-& $=det\myvec{cI-BA}$\\
-&\\
-& Thus, $det\myvec{cI-AB} = det\myvec{cI-BA}$\\
-& Hence, $AB$ and $BA$ have precisely the same characteristic values.\\
+Proof  & Let suppose $c$ is  the characteristic value of $AB$.\\
+& Then, $|cI-AB|=0$\\
+& \\
+& Here, $I$, $A$ and $B$ are $n \times n$ matrix.\\
+& $\implies c^n|I-\frac{1}{c}AB|=0$ \\
+& Using the result of Exercise $8$,\\
+& $c^n|I-\frac{1}{c}BA|=0$ \\
+& \\
+& $\implies |cI-BA|=0$\\
+& \\
+& $AB$ and $BA$ have precisely the same characteristic value.\\
 & \\
 \hline
 \end{tabular}
