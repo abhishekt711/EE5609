@@ -146,23 +146,19 @@ Let $\myvec{1&-1&1\\2&1&4\\-2&1&-4}$, Given that $1$ is an eigenvalue of M, then
 \item $M^{-1}=\frac{1}{4}(M+3I)$.
 \end{enumerate}
 \section{solution}
-Given,
+\begin{enumerate}
+\item{Given,
 \begin{align}
 \vec{M}=\myvec{1&-1&1\\2&1&4\\-2&1&-4}\\
-\lambda_1=1
+\lambda=1
 \end{align}
-We need to find the other eigenvalues,
+Characteristic equation is given as:
 \begin{align}
 \lvert M-\lambda I \rvert =0\\
 \myvec{1-\lambda&-1 &1\\2&1-\lambda&4\\-2&1&-4-\lambda}=0\\
 \lambda^3+2\lambda^2-7\lambda+4=0\\
-\implies (\lambda-1)^2(\lambda+4)=0\\
-\therefore \lambda=1 , -4
+\implies (\lambda-1)^2(\lambda+4)=0
 \end{align}
-For $\lambda=1$, corresponding eigenvector is $\myvec{-2\\1\\1}$.\\
-For $\lambda=-4$, corresponding eigenvector is $\myvec{-\frac{1}{3}\\-\frac{2}{3}\\1}$.\\
-For $3\times3$ matrix only $2$ independent eigenvectors are there. Hence, $P^{-1}$ does not exist and $M$ can't be diagonalizable.\\
-Thus, option c is correct.\\
 Characteristic equation is given as,
 \begin{align}
 p(x)=(X-1)^2(X+4)
@@ -176,19 +172,29 @@ For $a=1$, $b=1$,
 p(\vec{M})=(\vec{M}-1)(\vec{M}+4)\neq0
 \end{align}
 $\therefore (X-1)(X+4)$ is not a minimal polynomial.\\
-Thus option a is not correct.\\
-For $a=2$, $b=1$,
+Thus option a is not correct.\\}
+\item{For $a=2$, $b=1$,
 \begin{align}
 p(\vec{M})=(\vec{M}-1)^2(\vec{M}+4)=0
 \end{align}
 $\therefore (X-1)^2(X+4)$ is minimal polynomial.\\
-Thus option b is correct
+Thus option b is correct.}\\
+\item{ We need to find all the eigenvalues and corresponding eigenvectors to it.
 \begin{align}
-p(\vec{M})=(\vec{M}-1)^2(\vec{M}+4)=0\\
-\implies \vec{M}^3+2\vec{M}^2-7\vec{M}+4\vec{I}=0\\
+\implies (\lambda-1)^2(\lambda+4)=0\\
+\therefore \lambda=1 , -4
+\end{align}
+ For $\lambda=1$, corresponding eigenvector is $\myvec{-2\\1\\1}$.\\
+For $\lambda=-4$, corresponding eigenvector is $\myvec{-\frac{1}{3}\\-\frac{2}{3}\\1}$.\\
+For $3\times3$ matrix only $2$ independent eigenvectors are there. Hence, $P^{-1}$ does not exist and $M$ can't be diagonalizable.\\
+Thus, option c is correct.}\\
+\item{ Using Cayley-Hamilton
+\begin{align}
+p(\vec{M})= \vec{M}^3+2\vec{M}^2-7\vec{M}+4\vec{I}=0\\
 \vec{I}= -\frac{1}{4}(\vec{M}^3+2\vec{M}^2-7\vec{M})\\
 \vec{M}^{-1}=-\frac{1}{4}(\vec{M}^2+2\vec{M}-7\vec{I})
 \end{align}
-Thus option d is not correct.\\
+Thus option d is not correct.\\}
+\end{enumerate}
 Hence, the correct options are b and c.
 \end{document}
