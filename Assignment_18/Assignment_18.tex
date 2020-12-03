@@ -1,0 +1,203 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                \documentclass[journal,12pt,onecolumn]{IEEEtran}
+
+\usepackage{setspace}
+\usepackage{gensymb}
+
+\singlespacing
+
+
+\usepackage[cmex10]{amsmath}
+
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+\usepackage{txfonts}
+\usepackage{stfloats}
+\usepackage{bm}
+\usepackage{cite}
+\usepackage{cases}
+\usepackage{subfig}
+
+\usepackage{longtable}
+\usepackage{multirow}
+
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{steinmetz}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{tfrupee}
+\usepackage[breaklinks=true]{hyperref}
+
+\usepackage{tkz-euclide}
+
+\usetikzlibrary{calc,math}
+\usepackage{listings}
+    \usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}                                           %%
+    \usepackage{lscape}     
+\usepackage{multicol}
+\usepackage{chngcntr}
+\usepackage{graphicx}
+\DeclareMathOperator*{\Res}{Res}
+
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\renewcommand\thesectiondis{\arabic{section}}
+\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+\def\inputGnumericTable{}                                 %%
+
+\lstset{
+%language=C,
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+\begin{document}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\bibliographystyle{IEEEtran}
+\providecommand{\mbf}{\mathbf}
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+\providecommand{\lsbrak}[1]{\ensuremath{{}\left[#1\right.}}
+\providecommand{\rsbrak}[1]{\ensuremath{{}\left.#1\right]}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
+\providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\newcommand{\sgn}{\mathop{\mathrm{sgn}}}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\providecommand{\res}[1]{\Res\displaylimits_{#1}} 
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+%\providecommand{\norm}[1]{\lVert#1\rVert}
+\providecommand{\mtx}[1]{\mathbf{#1}}
+\providecommand{\mean}[1]{E\left[ #1 \right]}
+\providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
+%\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
+\providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
+	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\cosec}{\,\text{cosec}\,}
+\providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\numberwithin{equation}{subsection}
+\makeatletter
+\@addtoreset{figure}{problem}
+\makeatother
+\let\StandardTheFigure\thefigure
+\let\vec\mathbf
+\renewcommand{\thefigure}{\theproblem}
+\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
+     \def\rightbox#1{\makebox[0in][r]{#1}}
+     \def\centbox#1{\makebox[0in]{#1}}
+     \def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
+     \def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
+\vspace{3cm}
+\title{EE5609 Assignment 18}
+\author{Abhishek Thakur}
+\maketitle
+\bigskip
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\begin{abstract}
+This document solves problem based on Matrix Theory.
+\end{abstract}
+Download all solutions from 
+\begin{lstlisting}
+https://github.com/abhishekt711/EE5609/tree/master/Assignment_18
+\end{lstlisting}
+\section{Problem}
+Let $T$ be the linear operator on $R^2$, the matrix of which in the standard ordered basis is \\
+$\myvec{2&1\\0&2}$\\
+Let $W_1$ be the subspace of $R^2$ spanned by the vector $\epsilon_1=(1,0)$
+\begin{enumerate}
+\item Proove that $W_1$ is invariant under $T$.
+\item Prove that there is no subspace $W_2$ which is invariant under $T$ and is complementary to $W_1$:\\
+$R^2=W_1\oplus W_2$\\
+(Compare with exercise 1 of section 6.5.)
+\end{enumerate}
+\section{solution}
+\begin{longtable}{|p{5cm}|p{13cm}|}
+\hline
+\textbf{Statement} &\textbf{Solution}\\
+\hline
+& \\ 
+Given
+& \parbox{12cm}{$T$ be the linear operator on $R^2$
+the matrix of which in the standard ordered basis is $\myvec{2&1\\0&2}$ \\
+$W_1$ be the subspace of $R^2$ spanned by the vector $\epsilon_1=(1,0)$.\\}\\
+\hline
+& \\ 
+To Proove
+& \parbox{12cm}{\begin{enumerate}
+\item {$W_1$ is invariant under $T$.}
+\item{There is no subspace $W_2$ which is invariant under $T$ and is complementary to $W_1$:
+$R^2=W_1\oplus W_2$}
+\item{Compare with exercise 1 of section 6.5.}
+\end{enumerate}}
+\\
+& \\
+\hline
+Proof (a) &
+\parbox{12cm}{\begin{align}
+    \vec{A}=\myvec{2&1\\0&2}\\
+    \lvert A -\lambda I \rvert=0\\
+      \implies \myvec{2-\lambda & 1\\0& 2- \lambda} \\
+    = (2-\lambda)^2=0\\
+    \therefore \lambda =2
+    \end{align}
+    for $\lambda = 2$ , the corresponding vector is
+    \begin{align}
+    (\vec{A}-\lambda I)X=0\\
+    \myvec{0&1\\0&0}X=0\\
+    \therefore X=\myvec{1\\0}
+    \end{align}
+    Hence, $W_1$ be the subspace of $R^2$ spanned by the vector $\epsilon_1=(1,0)$ is invariant under $T$.\\
+}
+\\
+\hline
+& \\
+Proof (b) &
+\parbox{12cm}{ Corresponding to $\lambda=2$, \\ Among, two eigen vectors only one is independent and other one is dependent.\\
+ Thus, $P^-1$ does not exist and $A$ can not be diagonalized.\\ Hence, there is no subspace $W_2$ which is invariant under $T$ and is complementary to $W_1$:\\
+$R^2=W_1\oplus W_2$\\}\\
+\hline
+& \\
+Observation & 
+\parbox{12cm}{In exercise 1 of section 6.5, for $2\times 2$ matrix there is 2 distinct characteristic value, corresponding to which there is a eigen vector. Hence, $P^{-1}$ exists. \\
+$\therefore$ the given matrix is diagonalizable.\\}\\
+\hline
+\caption*{Table1:Solution}
+\end{longtable}
+\end{document}
