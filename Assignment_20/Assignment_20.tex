@@ -204,21 +204,29 @@ period of state 1.  Which of the following statements are correct?
      For $n=1$,
     \begin{align}
     \vec{P}=\myvec{0&\frac{1}{2}&\frac{1}{2}\\\frac{1}{2}&0&\frac{1}{2}\\\frac{1}{2}&\frac{1}{2}&0}\\
-    \therefore P_{11} = 0
     \end{align}
     For $n=2$,
     \begin{align}
-    \vec{P}^2=\myvec{0&\frac{1}{2}&\frac{1}{2}\\\frac{1}{2}&0&\frac{1}{2}\\\frac{1}{2}&\frac{1}{2}&0}\myvec{0&\frac{1}{2}&\frac{1}{2}\\\frac{1}{2}&0&\frac{1}{2}\\\frac{1}{2}&\frac{1}{2}&0}\\
     \vec{P}^2=\myvec{\frac{1}{2}&\frac{1}{4}&\frac{1}{4}\\\frac{1}{4}&\frac{1}{2}&\frac{1}{4}\\\frac{1}{4}&\frac{1}{4}&\frac{1}{2}}\\
-    \therefore P_{11}^2 > 0
     \end{align}
     For $n=3$,
     \begin{align}
-    \vec{P}^3=\vec{P}^2\vec{P}=\myvec{\frac{1}{2}&\frac{1}{4}&\frac{1}{4}\\\frac{1}{4}&\frac{1}{2}&\frac{1}{4}\\\frac{1}{4}&\frac{1}{4}&\frac{1}{2}}\myvec{0&\frac{1}{2}&\frac{1}{2}\\\frac{1}{2}&0&\frac{1}{2}\\\frac{1}{2}&\frac{1}{2}&0}\\
     \vec{P}^3=\myvec{\frac{1}{4}&\frac{3}{8}&\frac{3}{8}\\\frac{3}{8}&\frac{1}{4}&\frac{3}{8}\\\frac{3}{8}&\frac{3}{8}&\frac{1}{4}}\\
-    \therefore P_{11}^3 > 0
     \end{align}
-    Similarly, $P_{11}^4$, $P_{11}^5$, $\cdots \geq 0$ 
+        For $n=4$,
+    \begin{align}
+    \vec{P}^4=\myvec{\frac{3}{8}&\frac{5}{16}&\frac{5}{16}\\\frac{5}{16}&\frac{3}{8}&\frac{5}{16}\\\frac{5}{16}&\frac{5}{16}&\frac{3}{8}}\\
+    \end{align}
+Thus $P_{11}^n$ follows the sequence, that is defined as:
+\begin{align}
+    P_{11}^n= 
+\begin{cases}
+	0,& \text{if } n=1\\
+    \frac{1}{2},& \text{if } n=2\\
+    \frac{1}{2}(P_{11}^{n-1}+P_{11}^{n-2}),& \text{if } n >2
+\end{cases}
+\end{align}
+    Since, for $n>1$, $P_{11}^n$ are positive 
     \begin{align}
     d(1)=GCD\{2,3,4,5\cdots\}\\
     \therefore d(1)=1 \label{eq1}
@@ -228,23 +236,21 @@ period of state 1.  Which of the following statements are correct?
     Thus statement b is incorrect.}\\
     \item{For stationary distribution,
     \begin{align}
-    &\sum_{i=1}^{i=n} \pi_i = 1 \label{eq2}\\
-    &\pi   \vec{P} = \pi \label{eq3}\\
-    &\myvec{\pi_1&\pi_2&\pi_3}\myvec{0&\frac{1}{2}&\frac{1}{2}\\\frac{1}{2}&0&\frac{1}{2}\\\frac{1}{2}&\frac{1}{2}&0}=\myvec{\pi_1&\pi_2&\pi_3}\\   
-   & \implies -\pi_1+\frac{\pi_2}{2}+\frac{\pi_3}{2}=0\label{eq4}\\
-    &\implies \frac{\pi_1}{2}+-\pi_2+\frac{\pi_3}{2}=0\label{eq5}\\
-    &\implies \frac{\pi_1}{2}+\frac{\pi_2}{2}+-\pi_3=0\label{eq6}
-\end{align}
-Also using  \ref{eq2},
-\begin{align}    
-    \implies \pi_1+\pi_2+\pi_3=1\label{eq7}
+    &\sum_{i=1}^{i=n} \pi_i = 1 \\
+    &\implies\myvec{1&1&1}\myvec{\pi_1\\\pi_2\\\pi_3}=1\label{eq2}
     \end{align}
-    The given equation \ref{eq4}, \ref{eq5}, \ref{eq6},\ref{eq7}, can be written as:\\
+    Also for a stationary distribution,
+    \begin{align}
+    &\pi \vec{P} = \pi \\
+    &(\pi \vec{P})^T = \pi^T \\
+    &\vec{P}^T\pi^T=\pi^T\\
+    &\myvec{0&\frac{1}{2}&\frac{1}{2}\\\frac{1}{2}&0&\frac{1}{2}\\\frac{1}{2}&\frac{1}{2}&0}\myvec{\pi_1\\\pi_2\\\pi_3}=\myvec{\pi_1\\\pi_2\\\pi_3} \label{eq3}  
+\end{align}
+    The given equation \ref{eq2}, \ref{eq3} can be written as:\\
     \begin{align}
     \myvec{-1&\frac{1}{2}&\frac{1}{2}\\\frac{1}{2}&-1&\frac{1}{2}\\\frac{1}{2}&\frac{1}{2}&-1\\1&1&1}\myvec{\pi_1\\\pi_2\\\pi_3}=\myvec{0\\0\\0\\1}
     \end{align}
-    We need to solve the augmented matrix to row reduced echelon form to get the solution,
-    
+    We need to solve the augmented matrix to row reduced echelon form to get the solution,    
     \begin{align}
     \myvec{-1&\frac{1}{2}&\frac{1}{2}&\vrule&0\\\frac{1}{2}&-1&\frac{1}{2}&\vrule&0\\\frac{1}{2}&\frac{1}{2}&-1&\vrule&0\\1&1&1&\vrule&1}\xleftrightarrow{R_4=R_4+R_1}\\\myvec{-1&\frac{1}{2}&\frac{1}{2}&\vrule&0\\\frac{1}{2}&-1&\frac{1}{2}&\vrule&0\\\frac{1}{2}&\frac{1}{2}&-1&\vrule&0\\0&\frac{3}{2}&\frac{3}{2}&\vrule&1}\xleftrightarrow{R_1=-R_1}\\\myvec{1&-\frac{1}{2}&-\frac{1}{2}&\vrule&0\\\frac{1}{2}&-1&\frac{1}{2}&\vrule&0\\\frac{1}{2}&\frac{1}{2}&-1&\vrule&0\\0&\frac{3}{2}&\frac{3}{2}&\vrule&1}\xleftrightarrow{R_2=R_2-\frac{R_1}{2}, R_3=R_3-\frac{R_1}{2}}\\\myvec{1&-\frac{1}{2}&-\frac{1}{2}&\vrule&0\\0&-\frac{3}{4}&\frac{3}{4}&\vrule&0\\0&\frac{3}{4}&-\frac{3}{4}&\vrule&0\\0&\frac{3}{2}&\frac{3}{2}&\vrule&1}\xleftrightarrow{R_3=R_3+R_2, R_4=R_4+2R_2}\\\myvec{1&-\frac{1}{2}&-\frac{1}{2}&\vrule&0\\0&-\frac{3}{4}&\frac{3}{4}&\vrule&0\\0&0&0&\vrule&0\\0&0&3&\vrule&1}\xleftrightarrow{R_2=-\frac{4}{3}R_2}\\\myvec{1&-\frac{1}{2}&-\frac{1}{2}&\vrule&0\\0&1&-1&\vrule&0\\0&0&0&\vrule&0\\0&0&3&\vrule&1}\xleftrightarrow{R_1=R_1+\frac{1}{2}R_2}\\\myvec{1&0&-1&\vrule&0\\0&1&-1&\vrule&0\\0&0&0&\vrule&0\\0&0&3&\vrule&1}\xleftrightarrow{R_3 \leftrightarrow R_4}\\\myvec{1&0&-1&\vrule&0\\0&1&-1&\vrule&0\\0&0&3&\vrule&1\\0&0&0&\vrule&0}\xleftrightarrow{R_3=\frac{R_3}{3}}\\\myvec{1&0&-1&\vrule&0\\0&1&-1&\vrule&0\\0&0&1&\vrule&\frac{1}{3}\\0&0&0&\vrule&0}\xleftrightarrow{R_1=R_1+R_3, R_2=R_2+R_3}\\\myvec{1&0&0&\vrule&\frac{1}{3}\\0&1&0&\vrule&\frac{1}{3}\\0&0&1&\vrule&\frac{1}{3}\\0&0&0&\vrule&0}
     \end{align}
